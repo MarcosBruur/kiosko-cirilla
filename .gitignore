@@ -1,0 +1,20 @@
+# Archivos de base de datos y migraciones
+*.sqlite3
+db.sqlite3
+
+# Archivos de configuración y entorno
+.env
+*.pyc
+__pycache__/
+
+# Archivos de caché y datos temporales
+*.log
+*.pot
+*.py[cod]
+*.pyo
+*.~ 
+*~
+/media/
+/staticfiles/
+/node_modules/
+*.env

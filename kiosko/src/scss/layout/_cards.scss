@@ -1,0 +1,53 @@
+@use "../base/mixins" as *;
+@use "../base/globales" as *;
+@use "../base/utilidades" as *;
+@use "../base/variables" as *;
+
+@include tablet {
+  .contenedor-destacados {
+    @include grid(4, 2rem);
+  }
+}
+
+@include tablet {
+  .contenedor-categorias {
+    @include grid(3, 2rem);
+
+    a {
+      color: $rosa;
+
+      &:hover {
+        color: $rosaOscuro;
+      }
+    }
+  }
+  .contenedor-producto {
+    @include grid(4, 2rem);
+  }
+}
+
+.producto {
+  background-color: lighten($gris, 5);
+  margin-bottom: 2rem;
+  border: 1px solid $gris;
+
+  img {
+    height: 32rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .producto-texto {
+    padding: 2rem;
+    text-align: center;
+
+    h3 {
+      line-height: 1.2;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

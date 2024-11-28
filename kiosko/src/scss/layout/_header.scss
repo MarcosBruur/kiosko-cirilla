@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.header {
+  background-color: $verde;
+  padding: 2rem 0 2rem 0;
+
+  .contenedor {
+    max-width: none;
+  }
+}
+
+.contenido-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

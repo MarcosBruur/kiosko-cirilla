@@ -1,0 +1,16 @@
+//base
+@use "base/normalize" as *;
+@use "base/variables" as *;
+@use "base/mixins" as *;
+@use "base/globales" as *;
+@use "base/utilidades" as *;
+@use "base/botones" as *;
+
+//layout
+@use "layout/header" as *;
+@use "layout/navegacion" as *;
+@use "layout/iconos" as *;
+@use "layout/cards" as *;
+@use "layout/footer" as *;
+
+//internas

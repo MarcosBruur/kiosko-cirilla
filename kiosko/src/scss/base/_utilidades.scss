@@ -1,0 +1,10 @@
+@use "variables.scss" as *;
+
+.seccion {
+  margin-top: calc($separacion / 2);
+  margin-bottom: calc($separacion / 2);
+}
+
+.contenido-ajustado {
+  max-width: 800px;
+}

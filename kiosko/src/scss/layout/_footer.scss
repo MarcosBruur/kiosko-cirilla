@@ -1,0 +1,23 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.footer {
+  margin-top: 4rem;
+  background-color: $verde;
+  padding: 8rem;
+
+  .contenedor {
+    max-width: none;
+  }
+}
+
+.contenido-footer {
+  display: flex;
+  flex-direction: column;
+
+  .copyright {
+    color: $rosa;
+    text-align: center;
+    font-weight: bold;
+  }
+}

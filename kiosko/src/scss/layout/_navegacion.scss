@@ -1,0 +1,46 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 9rem;
+  }
+}
+
+.titulo {
+  h1 {
+    font-size: 4rem;
+    color: #921a40;
+    font-weight: bold;
+  }
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a {
+    color: $negro;
+    font-size: 2rem;
+    font-weight: bold;
+
+    &:hover {
+      color: $rosa;
+    }
+  }
+
+  @include tablet {
+    flex-direction: row;
+
+    a {
+      margin-right: 2rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
